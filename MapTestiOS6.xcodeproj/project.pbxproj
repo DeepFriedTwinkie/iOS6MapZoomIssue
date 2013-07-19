@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D215864E1799A6350019C221 /* CustomMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = D215864D1799A6350019C221 /* CustomMapView.m */; };
 		D24CEB81176BAECF003228AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24CEB80176BAECF003228AB /* UIKit.framework */; };
 		D24CEB83176BAECF003228AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24CEB82176BAECF003228AB /* Foundation.framework */; };
 		D24CEB85176BAECF003228AB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24CEB84176BAECF003228AB /* CoreGraphics.framework */; };
@@ -18,9 +19,14 @@
 		D24CEB97176BAECF003228AB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D24CEB96176BAECF003228AB /* Default-568h@2x.png */; };
 		D24CEB9A176BAECF003228AB /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D24CEB98176BAECF003228AB /* MainStoryboard.storyboard */; };
 		D24CEB9D176BAECF003228AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D24CEB9C176BAECF003228AB /* ViewController.m */; };
+		D24CEBA4176BAFB9003228AB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24CEBA3176BAFB9003228AB /* MapKit.framework */; };
+		D24CEBA6176BAFC8003228AB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24CEBA5176BAFC8003228AB /* CoreLocation.framework */; };
+		D24CEBA9176BB6B1003228AB /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = D24CEBA8176BB6B1003228AB /* Location.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D215864C1799A6350019C221 /* CustomMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomMapView.h; sourceTree = "<group>"; };
+		D215864D1799A6350019C221 /* CustomMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMapView.m; sourceTree = "<group>"; };
 		D24CEB7D176BAECF003228AB /* MapTestiOS6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapTestiOS6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D24CEB80176BAECF003228AB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D24CEB82176BAECF003228AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,6 +43,10 @@
 		D24CEB99176BAECF003228AB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		D24CEB9B176BAECF003228AB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D24CEB9C176BAECF003228AB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D24CEBA3176BAFB9003228AB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D24CEBA5176BAFC8003228AB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D24CEBA7176BB6B1003228AB /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		D24CEBA8176BB6B1003228AB /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D24CEBA6176BAFC8003228AB /* CoreLocation.framework in Frameworks */,
+				D24CEBA4176BAFB9003228AB /* MapKit.framework in Frameworks */,
 				D24CEB81176BAECF003228AB /* UIKit.framework in Frameworks */,
 				D24CEB83176BAECF003228AB /* Foundation.framework in Frameworks */,
 				D24CEB85176BAECF003228AB /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +68,8 @@
 		D24CEB74176BAECF003228AB = {
 			isa = PBXGroup;
 			children = (
+				D24CEBA5176BAFC8003228AB /* CoreLocation.framework */,
+				D24CEBA3176BAFB9003228AB /* MapKit.framework */,
 				D24CEB86176BAECF003228AB /* MapTestiOS6 */,
 				D24CEB7F176BAECF003228AB /* Frameworks */,
 				D24CEB7E176BAECF003228AB /* Products */,
@@ -86,9 +100,13 @@
 				D24CEB8F176BAECF003228AB /* AppDelegate.h */,
 				D24CEB90176BAECF003228AB /* AppDelegate.m */,
 				D24CEB98176BAECF003228AB /* MainStoryboard.storyboard */,
+				D24CEB87176BAECF003228AB /* Supporting Files */,
 				D24CEB9B176BAECF003228AB /* ViewController.h */,
 				D24CEB9C176BAECF003228AB /* ViewController.m */,
-				D24CEB87176BAECF003228AB /* Supporting Files */,
+				D215864C1799A6350019C221 /* CustomMapView.h */,
+				D215864D1799A6350019C221 /* CustomMapView.m */,
+				D24CEBA7176BB6B1003228AB /* Location.h */,
+				D24CEBA8176BB6B1003228AB /* Location.m */,
 			);
 			path = MapTestiOS6;
 			sourceTree = "<group>";
@@ -176,6 +194,8 @@
 				D24CEB8D176BAECF003228AB /* main.m in Sources */,
 				D24CEB91176BAECF003228AB /* AppDelegate.m in Sources */,
 				D24CEB9D176BAECF003228AB /* ViewController.m in Sources */,
+				D24CEBA9176BB6B1003228AB /* Location.m in Sources */,
+				D215864E1799A6350019C221 /* CustomMapView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +283,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MapTestiOS6/MapTestiOS6-Prefix.pch";
 				INFOPLIST_FILE = "MapTestiOS6/MapTestiOS6-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -274,7 +296,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MapTestiOS6/MapTestiOS6-Prefix.pch";
 				INFOPLIST_FILE = "MapTestiOS6/MapTestiOS6-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -298,6 +322,7 @@
 				D24CEBA2176BAECF003228AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
